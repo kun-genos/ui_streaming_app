@@ -40,4 +40,3 @@ Contributions are welcome! If you have ideas for improvements or new features, f
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
->>>>>>> master
