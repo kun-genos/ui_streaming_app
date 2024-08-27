@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ui_srtreaming_app/colors_schema.dart';
-import 'package:ui_srtreaming_app/widgets/menu_widget.dart';
 import 'package:ui_srtreaming_app/widgets/plus_widget.dart';
 
 class HomePage extends StatefulWidget {
