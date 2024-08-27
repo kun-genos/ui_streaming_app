@@ -1,4 +1,4 @@
-![Streaming App Banner](banner.png)
+![Streaming App Banner](assets/img/banner.png)
 
 # Streaming App UI
 
