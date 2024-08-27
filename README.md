@@ -35,7 +35,7 @@ Install dependencies:
 Run the app:
 - flutter run
   
-Contribution
+## Contribution
 Contributions are welcome! If you have ideas for improvements or new features, feel free to fork the repository, create a new branch, and submit a pull request.
 
 License
