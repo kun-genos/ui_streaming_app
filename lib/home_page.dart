@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_srtreaming_app/colors_schema.dart';
+import 'package:ui_srtreaming_app/widgets/menu_widget.dart';
 import 'package:ui_srtreaming_app/widgets/plus_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,6 +22,21 @@ class _HomePageState extends State<HomePage> {
   void onChangeFrequency(String freq) {
     selectedFrequency = freq;
     setState(() {});
+  }
+
+  int isSelectedIndex = 0;
+
+  static const List<Widget> _widgetOptions = <Widget>[
+    Text("Home Page"),
+    Text("Paket Page"),
+    Text("Transaksi Page"),
+    Text("Profil Page"),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      isSelectedIndex = index;
+    });
   }
 
   @override
@@ -345,6 +361,30 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.menu_book),
+            label: "Paket",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.payment),
+            label: "Transaksi",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Profil",
+          ),
+        ],
+        currentIndex: isSelectedIndex,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: ColButton,
+        onTap: _onItemTapped,
       ),
     );
   }
