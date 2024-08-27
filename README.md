@@ -27,17 +27,14 @@ To get started with this project:
    ```bash
    git clone https://github.com/your-username/streaming-app-ui.git
 Navigate to the project directory:
-bash
-Copy code
-cd streaming-app-ui
+- cd streaming-app-ui
+
 Install dependencies:
-bash
-Copy code
-flutter pub get
+- flutter pub get
+  
 Run the app:
-bash
-Copy code
-flutter run
+- flutter run
+  
 Contribution
 Contributions are welcome! If you have ideas for improvements or new features, feel free to fork the repository, create a new branch, and submit a pull request.
 
